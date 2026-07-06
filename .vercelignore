@@ -1,0 +1,3 @@
+*.mp4
+!assets/video/loop.mp4
+.claude
