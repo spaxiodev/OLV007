@@ -312,6 +312,35 @@ img{display:block}
   font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--olive);
 }
 .reg-sub__head .rule{flex:1;height:1px;background:var(--line)}
+/* Press callout - a full-width clipping card that reads as a headline,
+   not a footnote. Whole card is the link. */
+.press-card{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:20px 22px;
+  border:1px solid var(--ink);border-left:5px solid var(--olive-soft);
+  background:var(--brine-2);cursor:pointer;
+  transition:background .25s var(--ease),border-color .25s var(--ease);
+}
+.press-card:hover{background:var(--olive-soft);border-color:var(--olive-soft)}
+.press-card__badge{
+  font-family:var(--mono);font-weight:600;font-size:.62rem;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:var(--brine);background:var(--olive);padding:6px 10px;
+}
+.press-card:hover .press-card__badge{background:var(--char)}
+.press-card__title{
+  flex:1;min-width:220px;
+  font-family:var(--display);font-weight:700;letter-spacing:-.01em;
+  font-size:clamp(1.1rem,2.6vw,1.6rem);line-height:1.2;
+}
+.press-card:hover .press-card__title{color:var(--char)}
+.press-card__cta{
+  font-family:var(--mono);font-weight:600;font-size:.68rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--olive);
+  white-space:nowrap;
+}
+.press-card__cta::after{content:"\2197";margin-left:6px;display:inline-block}
+.press-card:hover .press-card__cta{color:var(--char)}
 /* The logos are white (built for dark), so the register is a dark
    contact-sheet band set into the paper page - a deliberate inversion. */
 .register{
@@ -466,6 +495,7 @@ a.reg__wordmark:hover{text-decoration:underline}
 .acquire .sec-head__title{margin:0 auto}
 .acquire .lead{margin:0 auto 6px}
 .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.acquire__motto{margin:14px auto 0;color:var(--olive-soft);letter-spacing:.08em;font-size:clamp(.85rem,1.8vw,1.1rem);font-weight:700}
 .acquire__proof{margin:22px auto 0;color:var(--olive-soft);letter-spacing:.04em;font-size:clamp(.72rem,1.4vw,.9rem)}
 .btn{
   font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
