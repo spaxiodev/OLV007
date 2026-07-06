@@ -21,8 +21,8 @@
   var toggle = document.getElementById("ambientToggle");
   var volEl  = document.getElementById("ambientVol");
 
-  var SRC        = "assets/audio/Tzivaeri.mp3";
-  var LOOP_START = parseFloat(wrap.getAttribute("data-loop-start")) || 0; // seconds (1:10)
+  var SRC        = "assets/audio/Tzivaeri-loop.m4a"; // pre-trimmed to the loop window
+  var LOOP_START = parseFloat(wrap.getAttribute("data-loop-start")) || 0; // seconds
   var CROSSFADE  = 3.5;   // seconds of overlap between the two players
   var FADE_IN    = 4;     // seconds to gently fade up when sound first begins
   var masterVol  = (parseInt(volEl.value, 10) || 18) / 100;
