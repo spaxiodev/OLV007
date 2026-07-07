@@ -494,7 +494,22 @@ a.reg__wordmark:hover{text-decoration:underline}
 }
 .reels__credit a{color:var(--olive);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .reels__credit a:hover{color:var(--stamp)}
-.reels__ambassador{margin-top:0;margin-bottom:24px}
+.shout{
+  display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;
+  background:var(--brine-2);border:1px solid var(--line);border-left:4px solid var(--stamp);
+  padding:16px 22px;
+}
+.shout--top{margin-bottom:28px}
+.shout--bottom{margin-top:14px}
+.shout__tag{
+  font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  background:var(--stamp);color:#fff;padding:6px 12px;white-space:nowrap;
+}
+.shout__text{
+  font-size:clamp(.95rem,1.9vw,1.15rem);font-weight:700;letter-spacing:.01em;color:var(--ink);
+}
+.shout__text a{color:var(--olive);text-decoration:underline;text-underline-offset:3px}
+.shout__text a:hover{color:var(--stamp)}
 
 /* ---- 07 Acquire ---- */
 .acquire{text-align:center}
