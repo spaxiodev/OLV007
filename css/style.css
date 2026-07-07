@@ -489,6 +489,12 @@ a.reg__wordmark:hover{text-decoration:underline}
 }
 .reels__foot a{color:var(--olive)}
 .reels__foot a:hover{color:var(--stamp)}
+.reels__credit{
+  margin-top:10px;color:var(--muted);letter-spacing:.16em;
+}
+.reels__credit a{color:var(--olive);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.reels__credit a:hover{color:var(--stamp)}
+.reels__ambassador{margin-top:0;margin-bottom:24px}
 
 /* ---- 07 Acquire ---- */
 .acquire{text-align:center}
